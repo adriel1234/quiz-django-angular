@@ -8,4 +8,9 @@ import { Player } from '../../models/player.model';
 })
 export class PlayerComponent {
   @Input() player!: Player;
+
+  selectPlayer(): void {
+    // Placeholder: can emit event or set selection state
+    console.log('Player selected', this.player);
+  }
 }

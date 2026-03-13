@@ -27,4 +27,10 @@ export class LobbyComponent implements OnInit {
       this.gameStarted = true;
     });
   }
+
+  leaveLobby(): void {
+    // Placeholder behavior: clear players list
+    this.players = [];
+    this.gameStarted = false;
+  }
 }

@@ -8,7 +8,7 @@ RUN npm ci --silent || npm install --silent
 
 # Copy source and build
 COPY . .
-RUN npm run build -- --prod
+RUN npm run build -- --configuration production
 
 # Production stage
 FROM nginx:alpine

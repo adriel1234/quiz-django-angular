@@ -34,4 +34,10 @@ export class GameComponent implements OnInit {
       this.gameState = updatedState;
     });
   }
+
+  startGame(): void {
+    this.gameService.startGame().subscribe(state => {
+      this.gameState = state;
+    });
+  }
 }
