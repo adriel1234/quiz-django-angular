@@ -1,0 +1,14 @@
+<div class="game-container">
+    <h1>Game Room</h1>
+    <div class="players">
+        <h2>Players</h2>
+        <ul>
+            <li *ngFor="let player of players">{{ player.name }}</li>
+        </ul>
+    </div>
+    <div class="game-board">
+        <h2>Game Board</h2>
+        <!-- Game board elements will go here -->
+    </div>
+    <button (click)="startGame()">Start Game</button>
+</div>
